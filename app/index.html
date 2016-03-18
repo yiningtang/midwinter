@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Midwinter</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- endbuild -->
+</head>
+
+<body ng-app="portfolio1App">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+    <!-- Add your site or application content here -->
+    <header>
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#/"><img src="images/logo.png" /></a>
+                </div>
+                <div class="collapse navbar-collapse" id="js-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li ui-sref-active="active"><a ui-sref="home">Home</a></li>
+                        <li ui-sref-active="active"><a ui-sref="about" ng-click="click()">About</a></li>
+                        <li ui-sref-active="active"><a ui-sref="contact" ng-click="click()">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div ui-view=""></div>
+    <footer class="row">
+        <div class="col-sm-4 description">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed eleifend quam. Nulla facilisi. Praesent faucibus tincidunt neque, ut vulputate eros consequat sit amet. Sed scelerisque congue lacinia. Aliquam erat volutpat. Nullam sit amet porta est. Duis nec elit nisl. Nunc sed massa non neque posuere iaculis vel a nisl. In justo sem, tincidunt laoreet faucibus maximus, tristique eu justo."
+        </div>
+        <div class="col-sm-4">
+            <h3>Contact Details</h3>
+            <p>Name</p>
+            <p>Address</p>
+            <p>ABN</p>
+        </div>
+        <div class="col-sm-4">
+            <h3>SOCIAL MEDIA</h3>
+            <span><img src="images/social1.png"></span>
+            <span><img src="images/social1.png"></span>
+            <span><img src="images/social1.png"></span>
+        </div>
+    </footer>
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

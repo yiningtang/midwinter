@@ -1,0 +1,75 @@
+.snowflake {
+  content: "---";
+  color: #5c6187;
+}
+/**navbar**/
+.navbar {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-image: -webkit-linear-gradient(top, #747da8 0%, #434c8b 100%);
+  background-image: -o-linear-gradient(top, #747da8 0%, #434c8b 100%);
+  background-image: linear-gradient(to bottom, #747da8 0%, #434c8b 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff747da8', endColorstr='#ff434c8b', GradientType=0);
+}
+.navbar .navbar-brand {
+  padding-top: 5px;
+}
+@media (min-width: 768px) {
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+.navbar #js-navbar-collapse {
+  border: 1px solid red;
+}
+@media (max-width: 768px) {
+  .navbar #js-navbar-collapse {
+    width: 200px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+  }
+}
+/**main**/
+.bg_home {
+  margin-left: -15px;
+  margin-right: -15px;
+  text-align: center;
+  width: 100%;
+  height: 600px;
+  padding: 0;
+  margin: 0;
+  background: url('../images/BG_Home.jpg') no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.bg_home .col-sm-6 {
+  padding: 5em;
+  float: right;
+}
+.bg_home p {
+  padding-top: 2em;
+  text-align: justify;
+}
+.bg_home .snowHeadings h1 {
+  color: #354463;
+}
+.bg_home .snowHeadings span::before {
+  content: "---";
+  color: #5c6187;
+}
+.bg_home .snowHeadings span::after {
+  content: "---";
+  color: #5c6187;
+}
+footer {
+  background-image: -webkit-linear-gradient(top, #747caa 100%, #3f4c87 0%);
+  background-image: -o-linear-gradient(top, #747caa 100%, #3f4c87 0%);
+  background-image: linear-gradient(to bottom, #747caa 100%, #3f4c87 0%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff747caa', endColorstr='#ff3f4c87', GradientType=0);
+}

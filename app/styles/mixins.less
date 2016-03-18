@@ -1,0 +1,29 @@
+.full-page(@path){
+    width:100%;
+height:600px;
+padding:0;
+margin:0;
+	background:url(@path) no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+}
+
+
+.snowflake{
+	content:"---";
+	color:@snowflake;
+	
+}
+.snowHeadings{
+text-align:center;
+h1{
+color:@snowheader;
+}
+span::before{
+.snowflake();
+}
+span::after{
+.snowflake();
+}
+
+}

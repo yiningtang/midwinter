@@ -1,0 +1,169 @@
+/**global**/
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+/**navbar**/
+
+.navbar {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    #gradient >.vertical(rgb(116, 125, 168), rgb(67, 76, 139), 0%, 100%);
+    .navbar-brand {
+        padding-top: 5px;
+    }
+    .navbar-nav {
+        @media(min-width: @screen-sm-min) {
+            float: right;
+        }
+        @media(max-width:@screen-sm-min) {
+            z-index: 1000;
+            background: #fff;
+            li {
+                z-index: 1000;
+                background: #fff;
+                a {
+                    color: black;
+                    &:hover {
+                        background: none;
+                    }
+                }
+            }
+            li.active {
+                background-color: #fff!important;
+                a {
+                    color: black;
+                    background-color: #fff!important;
+                }
+            }
+        }
+    }
+    #js-navbar-collapse {
+        //border:1px solid red;
+        @media (max-width: @screen-sm-min) {
+            width: 200px;
+            background: #fff;
+            position: absolute;
+            top: 40px;
+            right: 0;
+        }
+    }
+}
+
+
+/**main**/
+
+.bg_home {
+    .make-row();
+    text-align: center;
+    .full-page('../images/BG_Home.jpg');
+    .col-sm-6 {
+        padding: 5em;
+        float: right;
+    }
+    p {
+        padding-top: 2em;
+        text-align: justify;
+    }
+    .snowHeadings {
+        h1 {
+            color: @snowheader;
+        }
+        span::before {
+            .snowflake();
+        }
+        span::after {
+            .snowflake();
+        }
+    }
+}
+
+
+/**about**/
+
+.bg_about {
+    .full-page('../images/BG_About.jpg');
+    .snowHeadings {
+        &:extend(.snowHeadings);
+    }
+    .col-sm-6 {
+        text-align: center;
+    }
+}
+
+
+/**contact**/
+
+.bg_contact {
+    .full-page('../images/BG_Contact.jpg');
+    .col-sm-6 {
+        border:1px solid red;
+       
+        .contact-form {
+             border:1px solid red;
+             padding-top: 2em;
+            h2 {
+            text-align: center;
+            color:@snowheader;
+            }
+            width:40%;
+            margin:auto;
+            #contact-form{
+                input,textarea{
+                    width:100%;
+                    margin-bottom:2em;
+                }
+
+            }
+          
+        }
+        .submit-row {
+            text-align: right;
+            .submit {
+                background: orange;
+                color: white;
+                .border-top-radius(7px);
+                .border-bottom-radius(7px);
+                margin-left:50%;
+            }
+        }
+    }
+}
+
+footer {
+    #gradient >.vertical(rgb(116, 124, 170), rgb(63, 76, 135), 100%, 0%);
+    h3,
+    p {
+        color: white;
+    }
+    .col-sm-4 {
+        margin: 0;
+        padding: 3em;
+        vertical-align: middle;
+        text-align: center;
+        h3 {
+            text-decoration: underline;
+        }
+        p {
+            position: relative;
+            top: 0;
+            left: -70px;
+        }
+    }
+    .description {
+        vertical-align: middle;
+        color: white;
+        text-align: justify;
+        font-style: italic;
+        @media (max-width: @screen-sm-min) {
+            display: none;
+        }
+    }
+}

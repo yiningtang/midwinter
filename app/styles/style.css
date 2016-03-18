@@ -1,0 +1,199 @@
+.snowflake {
+  content: "---";
+  color: #5c6187;
+}
+.snowHeadings,
+.bg_about .snowHeadings {
+  text-align: center;
+}
+.snowHeadings h1 {
+  color: #354463;
+}
+.snowHeadings span::before {
+  content: "---";
+  color: #5c6187;
+}
+.snowHeadings span::after {
+  content: "---";
+  color: #5c6187;
+}
+/**global**/
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+/**navbar**/
+.navbar {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-image: -webkit-linear-gradient(top, #747da8 0%, #434c8b 100%);
+  background-image: -o-linear-gradient(top, #747da8 0%, #434c8b 100%);
+  background-image: linear-gradient(to bottom, #747da8 0%, #434c8b 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff747da8', endColorstr='#ff434c8b', GradientType=0);
+}
+.navbar .navbar-brand {
+  padding-top: 5px;
+}
+@media (min-width: 768px) {
+  .navbar .navbar-nav {
+    float: right;
+  }
+}
+@media (max-width: 768px) {
+  .navbar .navbar-nav {
+    z-index: 1000;
+    background: #fff;
+  }
+  .navbar .navbar-nav li {
+    z-index: 1000;
+    background: #fff;
+  }
+  .navbar .navbar-nav li a {
+    color: black;
+  }
+  .navbar .navbar-nav li a:hover {
+    background: none;
+  }
+  .navbar .navbar-nav li.active {
+    background-color: #fff!important;
+  }
+  .navbar .navbar-nav li.active a {
+    color: black;
+    background-color: #fff!important;
+  }
+}
+@media (max-width: 768px) {
+  .navbar #js-navbar-collapse {
+    width: 200px;
+    background: #fff;
+    position: absolute;
+    top: 40px;
+    right: 0;
+  }
+}
+/**main**/
+.bg_home {
+  margin-left: -15px;
+  margin-right: -15px;
+  text-align: center;
+  width: 100%;
+  height: 600px;
+  padding: 0;
+  margin: 0;
+  background: url('../images/BG_Home.jpg') no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.bg_home .col-sm-6 {
+  padding: 5em;
+  float: right;
+}
+.bg_home p {
+  padding-top: 2em;
+  text-align: justify;
+}
+.bg_home .snowHeadings h1 {
+  color: #354463;
+}
+.bg_home .snowHeadings span::before {
+  content: "---";
+  color: #5c6187;
+}
+.bg_home .snowHeadings span::after {
+  content: "---";
+  color: #5c6187;
+}
+/**about**/
+.bg_about {
+  width: 100%;
+  height: 600px;
+  padding: 0;
+  margin: 0;
+  background: url('../images/BG_About.jpg') no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.bg_about .col-sm-6 {
+  text-align: center;
+}
+/**contact**/
+.bg_contact {
+  width: 100%;
+  height: 600px;
+  padding: 0;
+  margin: 0;
+  background: url('../images/BG_Contact.jpg') no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.bg_contact .col-sm-6 {
+  border: 1px solid red;
+}
+.bg_contact .col-sm-6 .contact-form {
+  border: 1px solid red;
+  padding-top: 2em;
+  width: 40%;
+  margin: auto;
+}
+.bg_contact .col-sm-6 .contact-form h2 {
+  text-align: center;
+  color: #354463;
+}
+.bg_contact .col-sm-6 .contact-form #contact-form input,
+.bg_contact .col-sm-6 .contact-form #contact-form textarea {
+  width: 100%;
+  margin-bottom: 2em;
+}
+.bg_contact .col-sm-6 .submit-row {
+  text-align: right;
+}
+.bg_contact .col-sm-6 .submit-row .submit {
+  background: orange;
+  color: white;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  margin-left: 50%;
+}
+footer {
+  background-image: -webkit-linear-gradient(top, #747caa 100%, #3f4c87 0%);
+  background-image: -o-linear-gradient(top, #747caa 100%, #3f4c87 0%);
+  background-image: linear-gradient(to bottom, #747caa 100%, #3f4c87 0%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff747caa', endColorstr='#ff3f4c87', GradientType=0);
+}
+footer h3,
+footer p {
+  color: white;
+}
+footer .col-sm-4 {
+  margin: 0;
+  padding: 3em;
+  vertical-align: middle;
+  text-align: center;
+}
+footer .col-sm-4 h3 {
+  text-decoration: underline;
+}
+footer .col-sm-4 p {
+  position: relative;
+  top: 0;
+  left: -70px;
+}
+footer .description {
+  vertical-align: middle;
+  color: white;
+  text-align: justify;
+  font-style: italic;
+}
+@media (max-width: 768px) {
+  footer .description {
+    display: none;
+  }
+}
